@@ -1,3 +1,7 @@
+import { Button as ChakraButton } from '@chakra-ui/react';
+import { Button as YamadaButton } from "@yamada-ui/react";
+import { Button as ReactAriaButton } from 'react-aria-components';
+
 import styles from "@/styles/Home.module.css";
 import localFont from "next/font/local";
 import Head from "next/head";
@@ -26,7 +30,9 @@ export default function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
-          aaa
+        <ReactAriaButton>ReactAriaButton</ReactAriaButton>
+        <YamadaButton>YamadaButton</YamadaButton>
+        <ChakraButton>ChakraButton</ChakraButton>
         </main>
         <footer className={styles.footer}>
         </footer>
